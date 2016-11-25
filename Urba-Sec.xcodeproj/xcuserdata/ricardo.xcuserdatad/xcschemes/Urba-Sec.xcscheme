@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8CA1F0631DE8C9F500B95FE7"
+               BuildableName = "Urba-Sec.app"
+               BlueprintName = "Urba-Sec"
+               ReferencedContainer = "container:Urba-Sec.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8CA1F07C1DE8C9F500B95FE7"
+               BuildableName = "Urba-SecTests.xctest"
+               BlueprintName = "Urba-SecTests"
+               ReferencedContainer = "container:Urba-Sec.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8CA1F0871DE8C9F500B95FE7"
+               BuildableName = "Urba-SecUITests.xctest"
+               BlueprintName = "Urba-SecUITests"
+               ReferencedContainer = "container:Urba-Sec.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8CA1F0631DE8C9F500B95FE7"
+            BuildableName = "Urba-Sec.app"
+            BlueprintName = "Urba-Sec"
+            ReferencedContainer = "container:Urba-Sec.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8CA1F0631DE8C9F500B95FE7"
+            BuildableName = "Urba-Sec.app"
+            BlueprintName = "Urba-Sec"
+            ReferencedContainer = "container:Urba-Sec.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8CA1F0631DE8C9F500B95FE7"
+            BuildableName = "Urba-Sec.app"
+            BlueprintName = "Urba-Sec"
+            ReferencedContainer = "container:Urba-Sec.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

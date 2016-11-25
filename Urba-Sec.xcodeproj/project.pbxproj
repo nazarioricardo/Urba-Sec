@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CD3EAF409D4F7AE562C0C56 /* libPods-Urba-Sec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D4C536E5F2F4BEF554D8C8 /* libPods-Urba-Sec.a */; };
+		812994851337D2E0E119F36E /* libPods-Urba-SecUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15AC475A94224EF1FC60197E /* libPods-Urba-SecUITests.a */; };
 		8CA1F0691DE8C9F500B95FE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1F0681DE8C9F500B95FE7 /* main.m */; };
 		8CA1F06C1DE8C9F500B95FE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1F06B1DE8C9F500B95FE7 /* AppDelegate.m */; };
 		8CA1F06F1DE8C9F500B95FE7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1F06E1DE8C9F500B95FE7 /* ViewController.m */; };
@@ -15,6 +17,8 @@
 		8CA1F0771DE8C9F500B95FE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA1F0751DE8C9F500B95FE7 /* LaunchScreen.storyboard */; };
 		8CA1F0821DE8C9F500B95FE7 /* Urba_SecTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1F0811DE8C9F500B95FE7 /* Urba_SecTests.m */; };
 		8CA1F08D1DE8C9F500B95FE7 /* Urba_SecUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1F08C1DE8C9F500B95FE7 /* Urba_SecUITests.m */; };
+		8CA1F09B1DE8CCA600B95FE7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CA1F09A1DE8CCA600B95FE7 /* GoogleService-Info.plist */; };
+		A2FDB2F1458E5CC2466CFC6B /* libPods-Urba-SecTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 452EC890FD51DC0F81048BEA /* libPods-Urba-SecTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15AC475A94224EF1FC60197E /* libPods-Urba-SecUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Urba-SecUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		198D670133CCD0E4C632F7CA /* Pods-Urba-SecUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urba-SecUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Urba-SecUITests/Pods-Urba-SecUITests.release.xcconfig"; sourceTree = "<group>"; };
+		452EC890FD51DC0F81048BEA /* libPods-Urba-SecTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Urba-SecTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FECFF93921520A73D3CD8AA /* Pods-Urba-SecTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urba-SecTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Urba-SecTests/Pods-Urba-SecTests.debug.xcconfig"; sourceTree = "<group>"; };
+		77A6E87DFBF79403460ABF2E /* Pods-Urba-Sec.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urba-Sec.release.xcconfig"; path = "Pods/Target Support Files/Pods-Urba-Sec/Pods-Urba-Sec.release.xcconfig"; sourceTree = "<group>"; };
+		839D089F94791350D0D64747 /* Pods-Urba-SecTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urba-SecTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Urba-SecTests/Pods-Urba-SecTests.release.xcconfig"; sourceTree = "<group>"; };
+		8920B65CA608A1B206AEB031 /* Pods-Urba-SecUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urba-SecUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Urba-SecUITests/Pods-Urba-SecUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8CA1F0641DE8C9F500B95FE7 /* Urba-Sec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Urba-Sec.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA1F0681DE8C9F500B95FE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8CA1F06A1DE8C9F500B95FE7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +62,9 @@
 		8CA1F0881DE8C9F500B95FE7 /* Urba-SecUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Urba-SecUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA1F08C1DE8C9F500B95FE7 /* Urba_SecUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Urba_SecUITests.m; sourceTree = "<group>"; };
 		8CA1F08E1DE8C9F500B95FE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CA1F09A1DE8CCA600B95FE7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B7D4C536E5F2F4BEF554D8C8 /* libPods-Urba-Sec.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Urba-Sec.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9A7F036AA6F0D72CA6B48DA /* Pods-Urba-Sec.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urba-Sec.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Urba-Sec/Pods-Urba-Sec.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD3EAF409D4F7AE562C0C56 /* libPods-Urba-Sec.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2FDB2F1458E5CC2466CFC6B /* libPods-Urba-SecTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +88,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				812994851337D2E0E119F36E /* libPods-Urba-SecUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		810F7A1511FB14DA9F6774EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7D4C536E5F2F4BEF554D8C8 /* libPods-Urba-Sec.a */,
+				452EC890FD51DC0F81048BEA /* libPods-Urba-SecTests.a */,
+				15AC475A94224EF1FC60197E /* libPods-Urba-SecUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8CA1F05B1DE8C9F500B95FE7 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +112,8 @@
 				8CA1F0801DE8C9F500B95FE7 /* Urba-SecTests */,
 				8CA1F08B1DE8C9F500B95FE7 /* Urba-SecUITests */,
 				8CA1F0651DE8C9F500B95FE7 /* Products */,
+				E9040CFE0544039C23D387FB /* Pods */,
+				810F7A1511FB14DA9F6774EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +137,7 @@
 				8CA1F0701DE8C9F500B95FE7 /* Main.storyboard */,
 				8CA1F0731DE8C9F500B95FE7 /* Assets.xcassets */,
 				8CA1F0751DE8C9F500B95FE7 /* LaunchScreen.storyboard */,
+				8CA1F09A1DE8CCA600B95FE7 /* GoogleService-Info.plist */,
 				8CA1F0781DE8C9F500B95FE7 /* Info.plist */,
 				8CA1F0671DE8C9F500B95FE7 /* Supporting Files */,
 			);
@@ -140,6 +170,19 @@
 			path = "Urba-SecUITests";
 			sourceTree = "<group>";
 		};
+		E9040CFE0544039C23D387FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9A7F036AA6F0D72CA6B48DA /* Pods-Urba-Sec.debug.xcconfig */,
+				77A6E87DFBF79403460ABF2E /* Pods-Urba-Sec.release.xcconfig */,
+				6FECFF93921520A73D3CD8AA /* Pods-Urba-SecTests.debug.xcconfig */,
+				839D089F94791350D0D64747 /* Pods-Urba-SecTests.release.xcconfig */,
+				8920B65CA608A1B206AEB031 /* Pods-Urba-SecUITests.debug.xcconfig */,
+				198D670133CCD0E4C632F7CA /* Pods-Urba-SecUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CA1F0911DE8C9F500B95FE7 /* Build configuration list for PBXNativeTarget "Urba-Sec" */;
 			buildPhases = (
+				55C189C352D5874EB141CDF9 /* 📦 Check Pods Manifest.lock */,
 				8CA1F0601DE8C9F500B95FE7 /* Sources */,
 				8CA1F0611DE8C9F500B95FE7 /* Frameworks */,
 				8CA1F0621DE8C9F500B95FE7 /* Resources */,
+				EDF975F685401C8B0E00B03C /* 📦 Embed Pods Frameworks */,
+				BAF769B3F42878372620EBAB /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +210,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CA1F0941DE8C9F500B95FE7 /* Build configuration list for PBXNativeTarget "Urba-SecTests" */;
 			buildPhases = (
+				6EEF817C9CB7A06E231FCF52 /* 📦 Check Pods Manifest.lock */,
 				8CA1F0791DE8C9F500B95FE7 /* Sources */,
 				8CA1F07A1DE8C9F500B95FE7 /* Frameworks */,
 				8CA1F07B1DE8C9F500B95FE7 /* Resources */,
+				B8A6D4B22133623584FC7292 /* 📦 Embed Pods Frameworks */,
+				40566A34FE0E0DF928630438 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CA1F0971DE8C9F500B95FE7 /* Build configuration list for PBXNativeTarget "Urba-SecUITests" */;
 			buildPhases = (
+				2945DE0355C8CE57A6151CEE /* 📦 Check Pods Manifest.lock */,
 				8CA1F0841DE8C9F500B95FE7 /* Sources */,
 				8CA1F0851DE8C9F500B95FE7 /* Frameworks */,
 				8CA1F0861DE8C9F500B95FE7 /* Resources */,
+				A6B165A5AE0EF493CD5A33BC /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CA1F0771DE8C9F500B95FE7 /* LaunchScreen.storyboard in Resources */,
+				8CA1F09B1DE8CCA600B95FE7 /* GoogleService-Info.plist in Resources */,
 				8CA1F0741DE8C9F500B95FE7 /* Assets.xcassets in Resources */,
 				8CA1F0721DE8C9F500B95FE7 /* Main.storyboard in Resources */,
 			);
@@ -270,6 +322,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2945DE0355C8CE57A6151CEE /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		40566A34FE0E0DF928630438 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Urba-SecTests/Pods-Urba-SecTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55C189C352D5874EB141CDF9 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6EEF817C9CB7A06E231FCF52 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A6B165A5AE0EF493CD5A33BC /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Urba-SecUITests/Pods-Urba-SecUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8A6D4B22133623584FC7292 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Urba-SecTests/Pods-Urba-SecTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAF769B3F42878372620EBAB /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Urba-Sec/Pods-Urba-Sec-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDF975F685401C8B0E00B03C /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Urba-Sec/Pods-Urba-Sec-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8CA1F0601DE8C9F500B95FE7 /* Sources */ = {
@@ -425,6 +600,7 @@
 		};
 		8CA1F0921DE8C9F500B95FE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9A7F036AA6F0D72CA6B48DA /* Pods-Urba-Sec.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SGRW3864BW;
@@ -437,6 +613,7 @@
 		};
 		8CA1F0931DE8C9F500B95FE7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77A6E87DFBF79403460ABF2E /* Pods-Urba-Sec.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SGRW3864BW;
@@ -449,6 +626,7 @@
 		};
 		8CA1F0951DE8C9F500B95FE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FECFF93921520A73D3CD8AA /* Pods-Urba-SecTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = SGRW3864BW;
@@ -462,6 +640,7 @@
 		};
 		8CA1F0961DE8C9F500B95FE7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 839D089F94791350D0D64747 /* Pods-Urba-SecTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = SGRW3864BW;
@@ -475,6 +654,7 @@
 		};
 		8CA1F0981DE8C9F500B95FE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8920B65CA608A1B206AEB031 /* Pods-Urba-SecUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = SGRW3864BW;
 				INFOPLIST_FILE = "Urba-SecUITests/Info.plist";
@@ -487,6 +667,7 @@
 		};
 		8CA1F0991DE8C9F500B95FE7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 198D670133CCD0E4C632F7CA /* Pods-Urba-SecUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = SGRW3864BW;
 				INFOPLIST_FILE = "Urba-SecUITests/Info.plist";
@@ -516,6 +697,7 @@
 				8CA1F0931DE8C9F500B95FE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CA1F0941DE8C9F500B95FE7 /* Build configuration list for PBXNativeTarget "Urba-SecTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +706,7 @@
 				8CA1F0961DE8C9F500B95FE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CA1F0971DE8C9F500B95FE7 /* Build configuration list for PBXNativeTarget "Urba-SecUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +715,7 @@
 				8CA1F0991DE8C9F500B95FE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
