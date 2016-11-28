@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		4CD3EAF409D4F7AE562C0C56 /* libPods-Urba-Sec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D4C536E5F2F4BEF554D8C8 /* libPods-Urba-Sec.a */; };
 		812994851337D2E0E119F36E /* libPods-Urba-SecUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15AC475A94224EF1FC60197E /* libPods-Urba-SecUITests.a */; };
+		8C660B381DEC820E0016F9B7 /* UBFIRDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C660B371DEC820E0016F9B7 /* UBFIRDatabaseManager.m */; };
+		8C660B3F1DECA9E60016F9B7 /* UBLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C660B3E1DECA9E60016F9B7 /* UBLogInViewController.m */; };
 		8CA1F0691DE8C9F500B95FE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1F0681DE8C9F500B95FE7 /* main.m */; };
 		8CA1F06C1DE8C9F500B95FE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1F06B1DE8C9F500B95FE7 /* AppDelegate.m */; };
-		8CA1F06F1DE8C9F500B95FE7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1F06E1DE8C9F500B95FE7 /* ViewController.m */; };
 		8CA1F0721DE8C9F500B95FE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA1F0701DE8C9F500B95FE7 /* Main.storyboard */; };
 		8CA1F0741DE8C9F500B95FE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CA1F0731DE8C9F500B95FE7 /* Assets.xcassets */; };
 		8CA1F0771DE8C9F500B95FE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA1F0751DE8C9F500B95FE7 /* LaunchScreen.storyboard */; };
@@ -46,12 +47,14 @@
 		77A6E87DFBF79403460ABF2E /* Pods-Urba-Sec.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urba-Sec.release.xcconfig"; path = "Pods/Target Support Files/Pods-Urba-Sec/Pods-Urba-Sec.release.xcconfig"; sourceTree = "<group>"; };
 		839D089F94791350D0D64747 /* Pods-Urba-SecTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urba-SecTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Urba-SecTests/Pods-Urba-SecTests.release.xcconfig"; sourceTree = "<group>"; };
 		8920B65CA608A1B206AEB031 /* Pods-Urba-SecUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urba-SecUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Urba-SecUITests/Pods-Urba-SecUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C660B361DEC820E0016F9B7 /* UBFIRDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBFIRDatabaseManager.h; sourceTree = "<group>"; };
+		8C660B371DEC820E0016F9B7 /* UBFIRDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBFIRDatabaseManager.m; sourceTree = "<group>"; };
+		8C660B3D1DECA9E60016F9B7 /* UBLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBLogInViewController.h; sourceTree = "<group>"; };
+		8C660B3E1DECA9E60016F9B7 /* UBLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBLogInViewController.m; sourceTree = "<group>"; };
 		8CA1F0641DE8C9F500B95FE7 /* Urba-Sec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Urba-Sec.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA1F0681DE8C9F500B95FE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8CA1F06A1DE8C9F500B95FE7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8CA1F06B1DE8C9F500B95FE7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8CA1F06D1DE8C9F500B95FE7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8CA1F06E1DE8C9F500B95FE7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8CA1F0711DE8C9F500B95FE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CA1F0731DE8C9F500B95FE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CA1F0761DE8C9F500B95FE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -105,6 +108,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8C660B351DEC81E00016F9B7 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				8C660B361DEC820E0016F9B7 /* UBFIRDatabaseManager.h */,
+				8C660B371DEC820E0016F9B7 /* UBFIRDatabaseManager.m */,
+			);
+			name = Control;
+			sourceTree = "<group>";
+		};
 		8CA1F05B1DE8C9F500B95FE7 = {
 			isa = PBXGroup;
 			children = (
@@ -132,13 +144,14 @@
 			children = (
 				8CA1F06A1DE8C9F500B95FE7 /* AppDelegate.h */,
 				8CA1F06B1DE8C9F500B95FE7 /* AppDelegate.m */,
-				8CA1F06D1DE8C9F500B95FE7 /* ViewController.h */,
-				8CA1F06E1DE8C9F500B95FE7 /* ViewController.m */,
+				8C660B3D1DECA9E60016F9B7 /* UBLogInViewController.h */,
+				8C660B3E1DECA9E60016F9B7 /* UBLogInViewController.m */,
 				8CA1F0701DE8C9F500B95FE7 /* Main.storyboard */,
 				8CA1F0731DE8C9F500B95FE7 /* Assets.xcassets */,
 				8CA1F0751DE8C9F500B95FE7 /* LaunchScreen.storyboard */,
 				8CA1F09A1DE8CCA600B95FE7 /* GoogleService-Info.plist */,
 				8CA1F0781DE8C9F500B95FE7 /* Info.plist */,
+				8C660B351DEC81E00016F9B7 /* Control */,
 				8CA1F0671DE8C9F500B95FE7 /* Supporting Files */,
 			);
 			path = "Urba-Sec";
@@ -451,7 +464,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CA1F06F1DE8C9F500B95FE7 /* ViewController.m in Sources */,
+				8C660B381DEC820E0016F9B7 /* UBFIRDatabaseManager.m in Sources */,
+				8C660B3F1DECA9E60016F9B7 /* UBLogInViewController.m in Sources */,
 				8CA1F06C1DE8C9F500B95FE7 /* AppDelegate.m in Sources */,
 				8CA1F0691DE8C9F500B95FE7 /* main.m in Sources */,
 			);
