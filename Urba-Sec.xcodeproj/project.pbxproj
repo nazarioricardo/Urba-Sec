@@ -11,6 +11,8 @@
 		812994851337D2E0E119F36E /* libPods-Urba-SecUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15AC475A94224EF1FC60197E /* libPods-Urba-SecUITests.a */; };
 		8C660B381DEC820E0016F9B7 /* UBFIRDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C660B371DEC820E0016F9B7 /* UBFIRDatabaseManager.m */; };
 		8C660B3F1DECA9E60016F9B7 /* UBLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C660B3E1DECA9E60016F9B7 /* UBLogInViewController.m */; };
+		8C660B431DEDD29A0016F9B7 /* UBVisitorFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C660B421DEDD29A0016F9B7 /* UBVisitorFeedViewController.m */; };
+		8C660B461DEDD5DE0016F9B7 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C660B451DEDD5DE0016F9B7 /* Constants.m */; };
 		8CA1F0691DE8C9F500B95FE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1F0681DE8C9F500B95FE7 /* main.m */; };
 		8CA1F06C1DE8C9F500B95FE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1F06B1DE8C9F500B95FE7 /* AppDelegate.m */; };
 		8CA1F0721DE8C9F500B95FE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA1F0701DE8C9F500B95FE7 /* Main.storyboard */; };
@@ -51,6 +53,10 @@
 		8C660B371DEC820E0016F9B7 /* UBFIRDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBFIRDatabaseManager.m; sourceTree = "<group>"; };
 		8C660B3D1DECA9E60016F9B7 /* UBLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBLogInViewController.h; sourceTree = "<group>"; };
 		8C660B3E1DECA9E60016F9B7 /* UBLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBLogInViewController.m; sourceTree = "<group>"; };
+		8C660B411DEDD29A0016F9B7 /* UBVisitorFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBVisitorFeedViewController.h; sourceTree = "<group>"; };
+		8C660B421DEDD29A0016F9B7 /* UBVisitorFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBVisitorFeedViewController.m; sourceTree = "<group>"; };
+		8C660B441DEDD5DE0016F9B7 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		8C660B451DEDD5DE0016F9B7 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		8CA1F0641DE8C9F500B95FE7 /* Urba-Sec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Urba-Sec.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA1F0681DE8C9F500B95FE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8CA1F06A1DE8C9F500B95FE7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +123,17 @@
 			name = Control;
 			sourceTree = "<group>";
 		};
+		8C660B401DEDD2670016F9B7 /* Main View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8C660B3D1DECA9E60016F9B7 /* UBLogInViewController.h */,
+				8C660B3E1DECA9E60016F9B7 /* UBLogInViewController.m */,
+				8C660B411DEDD29A0016F9B7 /* UBVisitorFeedViewController.h */,
+				8C660B421DEDD29A0016F9B7 /* UBVisitorFeedViewController.m */,
+			);
+			name = "Main View Controllers";
+			sourceTree = "<group>";
+		};
 		8CA1F05B1DE8C9F500B95FE7 = {
 			isa = PBXGroup;
 			children = (
@@ -144,8 +161,9 @@
 			children = (
 				8CA1F06A1DE8C9F500B95FE7 /* AppDelegate.h */,
 				8CA1F06B1DE8C9F500B95FE7 /* AppDelegate.m */,
-				8C660B3D1DECA9E60016F9B7 /* UBLogInViewController.h */,
-				8C660B3E1DECA9E60016F9B7 /* UBLogInViewController.m */,
+				8C660B441DEDD5DE0016F9B7 /* Constants.h */,
+				8C660B451DEDD5DE0016F9B7 /* Constants.m */,
+				8C660B401DEDD2670016F9B7 /* Main View Controllers */,
 				8CA1F0701DE8C9F500B95FE7 /* Main.storyboard */,
 				8CA1F0731DE8C9F500B95FE7 /* Assets.xcassets */,
 				8CA1F0751DE8C9F500B95FE7 /* LaunchScreen.storyboard */,
@@ -468,6 +486,8 @@
 				8C660B3F1DECA9E60016F9B7 /* UBLogInViewController.m in Sources */,
 				8CA1F06C1DE8C9F500B95FE7 /* AppDelegate.m in Sources */,
 				8CA1F0691DE8C9F500B95FE7 /* main.m in Sources */,
+				8C660B431DEDD29A0016F9B7 /* UBVisitorFeedViewController.m in Sources */,
+				8C660B461DEDD5DE0016F9B7 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,6 +560,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -588,6 +609,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

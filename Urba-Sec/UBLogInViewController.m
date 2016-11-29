@@ -7,7 +7,9 @@
 //
 
 #import "UBLogInViewController.h"
+#import "UBVisitorFeedViewController.h"
 #import "UBFIRDatabaseManager.h"
+#import "Constants.h"
 
 @import Firebase;
 
@@ -19,7 +21,7 @@
 
 @property (weak, nonatomic) NSString *communityName;
 @property (weak, nonatomic) NSString *communityId;
-
+@property (weak, nonatomic) NSDictionary *result;
 
 @end
 
@@ -31,7 +33,9 @@
 
 -(void)logIn {
     
-    [[FIRAuth auth] signInWithEmail:_emailTextField.text password:_passwordTextField.text completion:^(FIRUser *user, NSError *error) {
+    [[FIRAuth auth] signInWithEmail:@"dgsepulveda@gmail.com"
+                           password:@"iamjach"
+                         completion:^(FIRUser *user, NSError *error) {
         
         if (error) {
             NSLog(@"Error: %@", error.description);
@@ -43,11 +47,10 @@
                 
                 if ([snapshot exists]) {
                     
-                    NSLog(@"Admin log in was successful");
-                    NSDictionary *result = snapshot.value;
+                    _result = [NSDictionary dictionaryWithObjectsAndKeys:snapshot.key,@"id",snapshot.value,@"values", nil];
                     
-                    _communityName = [result valueForKey:@"community-name"];
-                    _communityId = [result valueForKey:@"community-id"];
+                    NSLog(@"Admin log in was successful");
+                    [self performSegueWithIdentifier:logInSegue sender:self];
                     
                 } else {
                     
@@ -70,14 +73,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:logInSegue]) {
+        UITabBarController *tbc = [segue destinationViewController];
+        UBVisitorFeedViewController *vfvc = [tbc.viewControllers objectAtIndex:0];
+        [vfvc setCommunityDict:_result];
+    }
 }
-*/
+
 
 @end
