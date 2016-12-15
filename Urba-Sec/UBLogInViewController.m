@@ -8,6 +8,7 @@
 
 #import "UBLogInViewController.h"
 #import "UBVisitorFeedViewController.h"
+#import "ActivityView.h"
 #import "Constants.h"
 
 @import FirebaseDatabase;
@@ -35,11 +36,14 @@
 
 -(void)logIn {
     
+    ActivityView *spinner = [ActivityView loadSpinnerIntoView:self.view];
+    
     [[FIRAuth auth] signInWithEmail:@"dgsepulveda@gmail.com"
                            password:@"iamjach"
                          completion:^(FIRUser *user, NSError *error) {
         
         if (error) {
+            [spinner removeSpinner];
             NSLog(@"Error: %@", error.description);
         } else {
             
@@ -58,6 +62,7 @@
                     
                 } else {
                     
+                    [spinner removeSpinner];
                     NSLog(@"Attempted to log in without proper admin credentials");
                     [[FIRAuth auth] signOut:nil];
                 }

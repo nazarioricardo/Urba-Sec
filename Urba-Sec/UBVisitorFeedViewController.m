@@ -8,7 +8,6 @@
 
 #import "UBVisitorFeedViewController.h"
 #import "UBVisitorTableViewCell.h"
-#import "UBFIRDatabaseManager.h"
 
 @import FirebaseDatabase;
 

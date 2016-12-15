@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4CD3EAF409D4F7AE562C0C56 /* libPods-Urba-Sec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D4C536E5F2F4BEF554D8C8 /* libPods-Urba-Sec.a */; };
 		812994851337D2E0E119F36E /* libPods-Urba-SecUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15AC475A94224EF1FC60197E /* libPods-Urba-SecUITests.a */; };
-		8C660B381DEC820E0016F9B7 /* UBFIRDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C660B371DEC820E0016F9B7 /* UBFIRDatabaseManager.m */; };
 		8C660B3F1DECA9E60016F9B7 /* UBLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C660B3E1DECA9E60016F9B7 /* UBLogInViewController.m */; };
 		8C660B431DEDD29A0016F9B7 /* UBVisitorFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C660B421DEDD29A0016F9B7 /* UBVisitorFeedViewController.m */; };
 		8C660B461DEDD5DE0016F9B7 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C660B451DEDD5DE0016F9B7 /* Constants.m */; };
@@ -22,6 +21,7 @@
 		8CA1F08D1DE8C9F500B95FE7 /* Urba_SecUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA1F08C1DE8C9F500B95FE7 /* Urba_SecUITests.m */; };
 		8CA1F09B1DE8CCA600B95FE7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CA1F09A1DE8CCA600B95FE7 /* GoogleService-Info.plist */; };
 		8CDFEDC51E02EC47000654AF /* UBVisitorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDFEDC41E02EC47000654AF /* UBVisitorTableViewCell.m */; };
+		8CDFEDC81E02FDE6000654AF /* ActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDFEDC71E02FDE6000654AF /* ActivityView.m */; };
 		A2FDB2F1458E5CC2466CFC6B /* libPods-Urba-SecTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 452EC890FD51DC0F81048BEA /* libPods-Urba-SecTests.a */; };
 /* End PBXBuildFile section */
 
@@ -50,8 +50,6 @@
 		77A6E87DFBF79403460ABF2E /* Pods-Urba-Sec.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urba-Sec.release.xcconfig"; path = "Pods/Target Support Files/Pods-Urba-Sec/Pods-Urba-Sec.release.xcconfig"; sourceTree = "<group>"; };
 		839D089F94791350D0D64747 /* Pods-Urba-SecTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urba-SecTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Urba-SecTests/Pods-Urba-SecTests.release.xcconfig"; sourceTree = "<group>"; };
 		8920B65CA608A1B206AEB031 /* Pods-Urba-SecUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urba-SecUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Urba-SecUITests/Pods-Urba-SecUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		8C660B361DEC820E0016F9B7 /* UBFIRDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBFIRDatabaseManager.h; sourceTree = "<group>"; };
-		8C660B371DEC820E0016F9B7 /* UBFIRDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBFIRDatabaseManager.m; sourceTree = "<group>"; };
 		8C660B3D1DECA9E60016F9B7 /* UBLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBLogInViewController.h; sourceTree = "<group>"; };
 		8C660B3E1DECA9E60016F9B7 /* UBLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBLogInViewController.m; sourceTree = "<group>"; };
 		8C660B411DEDD29A0016F9B7 /* UBVisitorFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBVisitorFeedViewController.h; sourceTree = "<group>"; };
@@ -75,6 +73,8 @@
 		8CA1F09A1DE8CCA600B95FE7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CDFEDC31E02EC47000654AF /* UBVisitorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBVisitorTableViewCell.h; sourceTree = "<group>"; };
 		8CDFEDC41E02EC47000654AF /* UBVisitorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBVisitorTableViewCell.m; sourceTree = "<group>"; };
+		8CDFEDC61E02FDE6000654AF /* ActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityView.h; sourceTree = "<group>"; };
+		8CDFEDC71E02FDE6000654AF /* ActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityView.m; sourceTree = "<group>"; };
 		B7D4C536E5F2F4BEF554D8C8 /* libPods-Urba-Sec.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Urba-Sec.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9A7F036AA6F0D72CA6B48DA /* Pods-Urba-Sec.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urba-Sec.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Urba-Sec/Pods-Urba-Sec.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,15 +115,6 @@
 				15AC475A94224EF1FC60197E /* libPods-Urba-SecUITests.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8C660B351DEC81E00016F9B7 /* Control */ = {
-			isa = PBXGroup;
-			children = (
-				8C660B361DEC820E0016F9B7 /* UBFIRDatabaseManager.h */,
-				8C660B371DEC820E0016F9B7 /* UBFIRDatabaseManager.m */,
-			);
-			name = Control;
 			sourceTree = "<group>";
 		};
 		8C660B401DEDD2670016F9B7 /* Main View Controllers */ = {
@@ -169,12 +160,13 @@
 				8C660B441DEDD5DE0016F9B7 /* Constants.h */,
 				8C660B451DEDD5DE0016F9B7 /* Constants.m */,
 				8C660B401DEDD2670016F9B7 /* Main View Controllers */,
+				8CDFEDC61E02FDE6000654AF /* ActivityView.h */,
+				8CDFEDC71E02FDE6000654AF /* ActivityView.m */,
 				8CA1F0701DE8C9F500B95FE7 /* Main.storyboard */,
 				8CA1F0731DE8C9F500B95FE7 /* Assets.xcassets */,
 				8CA1F0751DE8C9F500B95FE7 /* LaunchScreen.storyboard */,
 				8CA1F09A1DE8CCA600B95FE7 /* GoogleService-Info.plist */,
 				8CA1F0781DE8C9F500B95FE7 /* Info.plist */,
-				8C660B351DEC81E00016F9B7 /* Control */,
 				8CA1F0671DE8C9F500B95FE7 /* Supporting Files */,
 			);
 			path = "Urba-Sec";
@@ -487,11 +479,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C660B381DEC820E0016F9B7 /* UBFIRDatabaseManager.m in Sources */,
 				8C660B3F1DECA9E60016F9B7 /* UBLogInViewController.m in Sources */,
 				8CA1F06C1DE8C9F500B95FE7 /* AppDelegate.m in Sources */,
 				8CA1F0691DE8C9F500B95FE7 /* main.m in Sources */,
 				8CDFEDC51E02EC47000654AF /* UBVisitorTableViewCell.m in Sources */,
+				8CDFEDC81E02FDE6000654AF /* ActivityView.m in Sources */,
 				8C660B431DEDD29A0016F9B7 /* UBVisitorFeedViewController.m in Sources */,
 				8C660B461DEDD5DE0016F9B7 /* Constants.m in Sources */,
 			);
