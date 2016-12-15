@@ -8,12 +8,14 @@
 
 #import "UBLogInViewController.h"
 #import "UBVisitorFeedViewController.h"
-#import "UBFIRDatabaseManager.h"
 #import "Constants.h"
 
-@import Firebase;
+@import FirebaseDatabase;
+@import FirebaseAuth;
 
 @interface UBLogInViewController ()
+
+@property (strong, nonatomic) FIRDatabaseReference *ref;
 
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *adminEmailTextField;
@@ -41,13 +43,15 @@
             NSLog(@"Error: %@", error.description);
         } else {
             
-            FIRDatabaseReference *ref = [[FIRDatabase database] reference];
-            ref = [[ref child:@"security"] child:user.uid];
-            [ref observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot *snapshot) {
+            _ref = [[FIRDatabase database] reference];
+            _ref = [[_ref child:@"security"] child:user.uid];
+            [_ref observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot *snapshot) {
                 
                 if ([snapshot exists]) {
                     
                     _result = [NSDictionary dictionaryWithObjectsAndKeys:snapshot.key,@"id",snapshot.value,@"values", nil];
+                    
+                    NSLog(@"DICT: %@", _result);
                     
                     NSLog(@"Admin log in was successful");
                     [self performSegueWithIdentifier:logInSegue sender:self];
@@ -58,7 +62,6 @@
                     [[FIRAuth auth] signOut:nil];
                 }
             }];
-
         }
     }];
 }
@@ -66,6 +69,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+-(void)viewDidDisappear:(BOOL)animated {
+    [_ref removeAllObservers];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -80,8 +87,8 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     if ([segue.identifier isEqualToString:logInSegue]) {
-        UITabBarController *tbc = [segue destinationViewController];
-        UBVisitorFeedViewController *vfvc = [tbc.viewControllers objectAtIndex:0];
+        UINavigationController *nav = [segue destinationViewController];
+        UBVisitorFeedViewController *vfvc = (UBVisitorFeedViewController *)[nav topViewController];
         [vfvc setCommunityDict:_result];
     }
 }
