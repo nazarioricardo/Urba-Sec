@@ -140,7 +140,7 @@
     
     NSString *message = [NSString stringWithFormat:@"Are you sure you want to confirm that %@ is through the gate?", visitorName];
     
-    NSDictionary *statusDict = [NSDictionary dictionaryWithObjectsAndKeys:@"Passed gate",@"status", nil];
+    NSDictionary *statusDict = [NSDictionary dictionaryWithObjectsAndKeys:@"Verified at gate",@"status", nil];
     
     UIAlertController *confirmView = [UIAlertController alertControllerWithTitle:@"Confirm"
                                                                          message:message
@@ -171,15 +171,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _communityId = [_communityDict valueForKeyPath:@"values.community-id"];
-    _communityName = [_communityDict valueForKeyPath:@"values.community-name"];
+    _communityId = [_secDict valueForKeyPath:@"values.community-id"];
+    _communityName = [_secDict valueForKeyPath:@"values.community-name"];
     
     _statusRef = [[FIRDatabase database] reference];
     
     _feedArray = [[NSMutableArray alloc] init];
     NSLog(@"Community ID: %@", _communityId);
     [self getVisitorRequests];
-    NSLog(@"Dict: %@", _communityDict);
+    NSLog(@"Dict: %@", _secDict);
     _visitorsTable.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     self.navigationItem.title = [NSString stringWithFormat:@"%@ Security", _communityName];
 }

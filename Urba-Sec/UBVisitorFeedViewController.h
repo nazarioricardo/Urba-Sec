@@ -10,6 +10,6 @@
 
 @interface UBVisitorFeedViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-@property (strong, nonatomic) NSDictionary *communityDict;
+@property (strong, nonatomic) NSDictionary *secDict;
 
 @end

@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "UBLogInViewController.h"
+#import "UBVisitorFeedViewController.h"
+#import "UBNavViewController.h"
+#import "ActivityView.h"
 
 @import Firebase;
 
@@ -20,6 +24,63 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [FIRApp configure];
+    
+    UIColor *urbaGreen = [UIColor colorWithRed:0.0/255.0 green:190.0/255.0 blue:58.0/255.0 alpha:1];
+    
+    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlackTranslucent];
+    [[UINavigationBar appearance] setTranslucent:NO];
+    [[UINavigationBar appearance] setBarTintColor:urbaGreen];
+    [[UINavigationBar appearance] setClipsToBounds:YES];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    [[UITabBar appearance] setBarTintColor:urbaGreen];
+    [[UITabBar appearance] setClipsToBounds:YES];
+    
+    [[FIRAuth auth] addAuthStateDidChangeListener:^(FIRAuth *auth, FIRUser *user) {
+        
+        [ActivityView loadSpinnerIntoView:self.window.rootViewController.view];
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        
+        if (user) {
+            
+            FIRDatabaseReference *ref = [[[FIRDatabase database] reference] child:@"security"];
+            FIRDatabaseQuery *query = [[ref queryOrderedByChild:@"email" ] queryEqualToValue:[FIRAuth auth].currentUser.email];
+            
+            [query observeEventType:FIRDataEventTypeValue
+                          withBlock:^(FIRDataSnapshot *snapshot) {
+                              
+                              // If logging user exits in one unit or more...
+                              if ([snapshot exists]) {
+                                  
+                                  NSLog(@"SNapshot exists");
+                                  
+                                  // Go to home view (NSUserDefaults has the current unit)
+                                  NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                                  NSDictionary *secDict = [defaults objectForKey:@"currentSec"];
+                                  UBNavViewController *navView = [storyboard instantiateViewControllerWithIdentifier:@"NavView"];
+                                  UBVisitorFeedViewController *mainView = (UBVisitorFeedViewController *)[navView topViewController];
+                                  if (snapshot.childrenCount == 1) {
+                                      for (FIRDataSnapshot *snap in snapshot.children) {
+                                          secDict = [NSDictionary dictionaryWithObjectsAndKeys:snap.key,@"id", snap.value, @"values", nil];
+                                      }
+                                      [mainView setSecDict:secDict];
+                                      [self.window.rootViewController presentViewController:navView animated:YES completion:nil];
+                                  }
+                              } else {
+                                  NSLog(@"No snaps");
+                              }
+                          }];
+        } else {
+        
+            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+            [defaults setObject:nil forKey:@"currentCommunity"];
+            UBLogInViewController *ulvc = [storyboard instantiateInitialViewController];
+            [self.window.rootViewController presentViewController:ulvc animated:YES completion:nil];
+        }
+    }];
+
+    
     return YES;
 }
 

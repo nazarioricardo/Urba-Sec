@@ -7,6 +7,7 @@
 //
 
 #import "UBLogInViewController.h"
+#import "UBNavViewController.h"
 #import "UBVisitorFeedViewController.h"
 #import "ActivityView.h"
 #import "Constants.h"
@@ -38,8 +39,8 @@
     
     ActivityView *spinner = [ActivityView loadSpinnerIntoView:self.view];
     
-    [[FIRAuth auth] signInWithEmail:@"dgsepulveda@gmail.com"
-                           password:@"iamjach"
+    [[FIRAuth auth] signInWithEmail:_emailTextField.text
+                           password:_passwordTextField.text
                          completion:^(FIRUser *user, NSError *error) {
         
         if (error) {
@@ -92,9 +93,9 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     if ([segue.identifier isEqualToString:logInSegue]) {
-        UINavigationController *nav = [segue destinationViewController];
+        UBNavViewController *nav = [segue destinationViewController];
         UBVisitorFeedViewController *vfvc = (UBVisitorFeedViewController *)[nav topViewController];
-        [vfvc setCommunityDict:_result];
+        [vfvc setSecDict:_result];
     }
 }
 
